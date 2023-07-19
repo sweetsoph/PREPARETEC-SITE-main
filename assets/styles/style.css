@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 :root {
   --white: #fafafa;
   --dark-blue: #0c226f;
@@ -6,27 +9,19 @@
   --dark-grey: #263238;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: #F1F1F1;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--dark-blue);
   border-radius: 3px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -64,10 +59,23 @@ h4 {
   min-width: 260px;
   margin: 0;
 }
-p {
-  font-size: 16px;
+h5{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.p1{
   color: var(--dark-grey);
+  font-size: 16px;
   text-align: justify;
+  margin: 0;
+}
+.p2{
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+  margin: 0;
 }
 #splash {
   width: 100vw;
@@ -195,7 +203,7 @@ button:hover {
   color: var(--dark-grey);
   text-align: left;
 }
-#inicio button {
+.btn-saiba-mais {
   background-color: var(--yellow);
   color: var(--white);
   border: none;
@@ -225,7 +233,7 @@ button:hover {
   gap: 15px;
   height: fit-content;
 }
-.projeto-header {
+.section-title {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -233,7 +241,7 @@ button:hover {
   width: 70%;
   min-width: 280px;
 }
-.projeto-content {
+.section-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,9 +249,6 @@ button:hover {
   gap: 15px;
   width: 70%;
   min-width: 280px;
-}
-.projeto-content p {
-  color: white;
 }
 .cards-container {
   display: flex;
@@ -287,7 +292,8 @@ button:hover {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 70px 0;
+  padding: 70px 30px;
+  width: calc(100vw - 60px);
   justify-content: center;
 }
 .projeto-final h3{
@@ -310,13 +316,42 @@ button:hover {
   gap: 10px;
 }
 .final-content p{
+  margin: 0 40px;
+}
+
+#participe{
+  background-color: var(--light-blue);
+  padding: 70px 30px;
+  width: calc(100vw - 60px);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#participe h4{
+  text-align: left;
+}
+.participe-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 30px;
+}
+#participe .section-title{
   width: 80%;
-  min-width: 240px;
-  margin: 0;
 }
-.projeto-final img{
-  margin-right: 40px;
+#participe .section-content{
+  width: 80%;
 }
+.participe-bottom{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  width: 80%;
+  min-width: 280px;
+}
+
 @media (max-width: 1023px) {
   nav {
     width: 100%;
@@ -371,6 +406,12 @@ button:hover {
     background-image: none;
   }
   .inicio-content{
+    align-items: center;
+  }
+  #participe{
+    justify-content: center;
+  }
+  .participe-content{
     align-items: center;
   }
 }
