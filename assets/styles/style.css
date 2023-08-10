@@ -116,6 +116,7 @@ header {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
   padding: 0 30px;
   position: fixed;
+  z-index: 1;
 }
 .header-images {
   display: flex;
@@ -124,8 +125,7 @@ header {
   width: 20%;
 }
 .header-images img {
-  min-width: 50px;
-  max-width: 100px;
+  height: 60px;
 }
 nav {
   display: flex;
@@ -243,11 +243,12 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   height: fit-content;
+  gap: 30px;
 }
 .projeto-title {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   height: fit-content;
 }
 .section-title {
@@ -263,15 +264,15 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
   width: 70%;
   min-width: 280px;
 }
 .cards-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
   width: 100%;
+  gap: 15px;
   flex-wrap: wrap;
 }
 .projeto-cards {
@@ -284,7 +285,7 @@ button:hover {
   flex: 1;
   max-width: 360px;
   min-width: 260px;
-  height: 150px;
+  height: 100px;
   padding: 10px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -370,7 +371,7 @@ button:hover {
 }
 
 #quem-somos{
-  padding: 70px 0 0 0;
+  padding: 70px 0 30px 0;
   width: calc(100vw - 60px);
   display: flex;
   flex-direction: column;
@@ -387,14 +388,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  height: 120px;
+  height: 150px;
   flex-wrap: wrap;
 }
 .logos img{
   height: 100%;
-}
-.logos .logo-dem{
-  height: 70%;
 }
 .equipe-container{
   display: flex;
@@ -432,6 +430,33 @@ button:hover {
   opacity: 30%;
 }
 
+
+#rodape{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 60px);
+  background-color: #55555520;
+  justify-content: space-between;
+  padding: 30px;
+}
+.rodape-container{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.rodape-content{
+  width: 30%;
+  min-width: 250px;
+}
+.rodape-logos{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#rodape img{
+  height: 150px;
+}
 @media (max-width: 1023px) {
   nav {
     width: 100%;
