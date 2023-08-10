@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <title>PREPARETEC - Blog</title>
+  </head>
+  <body>
+    <header>
+        <div class="header-images">
+          <img
+            src="../assets/images/preparetec-logo.png"
+            alt="Logo do PREPARETEC"
+            id="preparetec"
+          />
+          <img src="../assets/images/dem-logo.png" alt="Logo do DEM" id="dem" />
+        </div>
+        <nav>
+          <button id="button-nav">
+            <div class="button-line"></div>
+            <div class="button-line"></div>
+            <div class="button-line"></div>
+          </button>
+          <ul id="nav">
+            <li><a href="../index.html#inicio">Início</a></li>
+            <li><a href="../index.html#projeto">Projeto</a></li>
+            <li><a href="../index.html#participe">Participe</a></li>
+            <li><a href="../index.html#quem-somos">Quem somos?</a></li>
+            <li id="blog"><a>Blog</a></li>
+          </ul>
+        </nav>
+        <button id="btn-login">
+          <img src="../assets/images/login-icon.png" alt="Ícone de login" />
+          <p>Entrar</p>
+        </button>
+      </header>
+      <script>
+        btnBlog = document.getElementById("blog");
+        btnText = btnBlog.getElementsByTagName("a")[0];
+
+        btnText.style.color = "#ffa500 ";
+        btnText.style.borderBottom = "2px solid #ffa500";
+      </script>
+  </body>
+</html>
