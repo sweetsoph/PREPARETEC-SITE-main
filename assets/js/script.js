@@ -12,3 +12,10 @@ var btn = document.getElementById("button-nav");
 btn.addEventListener("click", function () {
     document.getElementById("nav").classList.toggle("active");
 });
+
+
+var btnLogin = document.getElementById("btn-login");
+
+btnLogin.addEventListener("click", function () {
+    window.location.href = "screens/login/login.html";
+});
