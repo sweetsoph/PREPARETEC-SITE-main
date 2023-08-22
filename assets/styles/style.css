@@ -224,7 +224,7 @@ button:hover {
   color: var(--dark-grey);
   text-align: left;
 }
-.btn-saiba-mais {
+#btn-saiba-mais {
   background-color: var(--yellow);
   color: var(--white);
   border: none;

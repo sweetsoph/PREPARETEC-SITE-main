@@ -22,13 +22,14 @@
               </div>
               <div class="form-group">
                 <label class="p1">CPF:</label>
-                <input type="text" placeholder="CPF" class="p1 input"></input>
+                <input type="text" placeholder="000.000.000-00" id="cpf" class="p1 input" minlength="14" maxlength="14" autocomplete="off"></input>
               </div>
-              <input type="submit" value="Consultar" class="p2 btn"></input>
+              <input type="submit" value="Consultar" class="p2 btn" id="form-submit"></input>
             </form>
           </div>
         </div>
         <img src="../../assets/images/background-img.png" class="background-img"></img>
     </main>
+    <script src="../../assets/js/searchCPF.js"></script>
   </body>
 </html>

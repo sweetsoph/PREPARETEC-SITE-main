@@ -7,9 +7,9 @@ function splashScreen() {
 }
 setTimeout(splashScreen, 1500);
 
-var btn = document.getElementById("button-nav");
+var btnNav = document.getElementById("button-nav");
 
-btn.addEventListener("click", function () {
+btnNav.addEventListener("click", function () {
     document.getElementById("nav").classList.toggle("active");
 });
 
@@ -18,4 +18,10 @@ var btnLogin = document.getElementById("btn-login");
 
 btnLogin.addEventListener("click", function () {
     window.location.href = "screens/login/login.html";
+});
+
+var btnSearchCPF = document.getElementById("btn-saiba-mais");
+
+btnSearchCPF.addEventListener("click",()=>{
+    window.location.href = "screens/Login/consultarCPF.html";
 });
