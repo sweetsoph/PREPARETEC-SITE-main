@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 :root {
   --white: #fafafa;
   --dark-blue: #0c226f;

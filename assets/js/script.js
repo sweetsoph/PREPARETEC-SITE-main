@@ -1,6 +1,8 @@
 var splash = document.getElementById("splash");
 var main = document.getElementById("main");
 
+main.style.display = "none";
+
 function splashScreen() {
   splash.style.display = "none";
   main.style.display = "flex";
